@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5fbff;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    color: #087e8b;
+    font-size: 25px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #087e8b;
+}
+
+/* Hero Section */
+.hero {
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=1400");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 45px;
+    margin-bottom: 18px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #087e8b;
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #065d67;
+}
+
+/* Common Headings */
+.about h2,
+.departments h2,
+.doctors h2,
+.services h2,
+.appointment h2,
+.health h2,
+.emergency h2,
+.contact h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #087e8b;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 35px;
+}
+
+/* About Section */
+.about {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.about>p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.8;
+    color: #666;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.about-box {
+    background-color: white;
+    width: 200px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-box h3 {
+    font-size: 30px;
+    color: #087e8b;
+    margin-bottom: 10px;
+}
+
+/* Departments */
+.departments {
+    padding: 60px 7%;
+    background-color: #eaf7fa;
+}
+
+.department-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.department-card {
+    width: 240px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.department-card:hover {
+    transform: translateY(-7px);
+}
+
+.department-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.department-card h3 {
+    color: #087e8b;
+    margin: 15px 0;
+}
+
+.department-card p {
+    padding: 0 15px 20px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Doctors */
+.doctors {
+    padding: 60px 7%;
+}
+
+.doctor-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.doctor-card {
+    width: 260px;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.doctor-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.doctor-card h3 {
+    color: #087e8b;
+    margin: 15px 0 8px;
+}
+
+.doctor-card p {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.doctor-card span {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Medical Services */
+.services {
+    padding: 60px 7%;
+    background-color: #eaf7fa;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: white;
+    width: 240px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: #087e8b;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Appointment Section */
+.appointment {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.appointment>p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.appointment form {
+    max-width: 550px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.appointment input,
+.appointment select,
+.appointment textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.appointment button {
+    width: 100%;
+    background-color: #087e8b;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.appointment button:hover {
+    background-color: #065d67;
+}
+
+/* Health Information */
+.health {
+    background-color: #eaf7fa;
+    padding: 60px 7%;
+}
+
+.health-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.health-card {
+    background-color: white;
+    width: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.health-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.health-card h3 {
+    color: #087e8b;
+    margin: 15px;
+}
+
+.health-card p {
+    color: #666;
+    padding: 0 15px 20px;
+    line-height: 1.6;
+}
+
+/* Emergency Section */
+.emergency {
+    background-color: #dff5f2;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.emergency h2 {
+    color: #d62828;
+}
+
+.emergency p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.emergency h3 {
+    color: #087e8b;
+    margin: 12px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #07545d;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact p {
+    margin: 12px;
+}
+
+/* Footer */
+footer {
+    background-color: #06383e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        height: 400px;
+        padding: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 30px;
+    }
+
+    .department-card,
+    .doctor-card,
+    .service-card,
+    .health-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .about-box {
+        width: 145px;
+    }
+}
